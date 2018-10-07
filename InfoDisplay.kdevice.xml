@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KonnektingDevice xmlns="http://konnekting.de/xml/KonnektingDevice/v0">
+    <Device ManufacturerId="7070" DeviceId="175" Revision="1">
+        <ManufacturerName>KONNEKTING</ManufacturerName>
+        <DeviceName>Info Display (OLED, 8 lines)</DeviceName>
+        <Parameters>
+            <ParameterGroup Name="General settings" Id="0">
+                <Parameter Id="0" IdName="initialDelay">
+                    <Description>Startup delay [0..65535ms]</Description>
+                    <Value Type="uint16" Default="03E8" Options="" Min="0000" Max="FFFF"/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Line 1" Id="1">
+                <Parameter Id="1" IdName="line1type">
+                    <Description>Type</Description>
+                    <Value Type="uint8" Default="06" Options="06=unused|00=byte (DPT 5.0xx)|01=integer value (DPT 8.0xx)|02=unsigned interger value (DPT 7.0xx)|03=float value (DPT 9.0xx)|04=text for bool value (DPT 1.0xx)|05=text (DPT 16.001)|07=Date + Time" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="2" IdName="line1text">
+                    <Description>Description (max 11 character)</Description>
+                    <Value Type="string11" Default="652e672e20524800000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="3" IdName="line1unit">
+                    <Description>Unit (max 3 character)</Description>
+                    <Value Type="string11" Default="652e672e20b04300000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="4" IdName="line1val0">
+                    <Description>Text for value=0 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f66660000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="5" IdName="line1val1">
+                    <Description>Text for value=1 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f6e000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Line 2" Id="2">
+                <Parameter Id="6" IdName="line2type">
+                    <Description>Type</Description>
+                    <Value Type="uint8" Default="06" Options="06=unused|00=byte (DPT 5.0xx)|01=integer value (DPT 8.0xx)|02=unsigned interger value (DPT 7.0xx)|03=float value (DPT 9.0xx)|04=text for bool value (DPT 1.0xx)|05=text (DPT 16.001)" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="7" IdName="line2text">
+                    <Description>Description (max 11 character)</Description>
+                    <Value Type="string11" Default="652e672e20524800000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="8" IdName="line2unit">
+                    <Description>Unit (max 3 character)</Description>
+                    <Value Type="string11" Default="652e672e20b04300000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="9" IdName="line2val0">
+                    <Description>Text for value=0 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f66660000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="10" IdName="line2val1">
+                    <Description>Text for value=1 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f6e000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Line 3" Id="3">
+                <Parameter Id="11" IdName="line3type">
+                    <Description>Type</Description>
+                    <Value Type="uint8" Default="06" Options="06=unused|00=byte (DPT 5.0xx)|01=integer value (DPT 8.0xx)|02=unsigned interger value (DPT 7.0xx)|03=float value (DPT 9.0xx)|04=text for bool value (DPT 1.0xx)|05=text (DPT 16.001)" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="12" IdName="line3text">
+                    <Description>Description (max 11 character)</Description>
+                    <Value Type="string11" Default="652e672e20524800000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="13" IdName="line3unit">
+                    <Description>Unit (max 3 character)</Description>
+                    <Value Type="string11" Default="652e672e20b04300000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="14" IdName="line3val0">
+                    <Description>Text for value=0 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f66660000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="15" IdName="line3val1">
+                    <Description>Text for value=1 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f6e000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Line 4" Id="4">
+                <Parameter Id="16" IdName="line4type">
+                    <Description>Type</Description>
+                    <Value Type="uint8" Default="06" Options="06=unused|00=byte (DPT 5.0xx)|01=integer value (DPT 8.0xx)|02=unsigned interger value (DPT 7.0xx)|03=float value (DPT 9.0xx)|04=text for bool value (DPT 1.0xx)|05=text (DPT 16.001)" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="17" IdName="line4text">
+                    <Description>Description (max 11 character)</Description>
+                    <Value Type="string11" Default="652e672e20524800000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="18" IdName="line4unit">
+                    <Description>Unit (max 3 character)</Description>
+                    <Value Type="string11" Default="652e672e20b04300000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="19" IdName="line4val0">
+                    <Description>Text for value=0 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f66660000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="20" IdName="line4val1">
+                    <Description>Text for value=1 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f6e000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Line 5" Id="5">
+                <Parameter Id="21" IdName="line5type">
+                    <Description>Type</Description>
+                    <Value Type="uint8" Default="06" Options="06=unused|00=byte (DPT 5.0xx)|01=integer value (DPT 8.0xx)|02=unsigned interger value (DPT 7.0xx)|03=float value (DPT 9.0xx)|04=text for bool value (DPT 1.0xx)|05=text (DPT 16.001)" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="22" IdName="line5text">
+                    <Description>Description (max 11 character)</Description>
+                    <Value Type="string11" Default="652e672e20524800000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="23" IdName="line5unit">
+                    <Description>Unit (max 3 character)</Description>
+                    <Value Type="string11" Default="652e672e20b04300000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="24" IdName="line5val0">
+                    <Description>Text for value=0 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f66660000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="25" IdName="line5val1">
+                    <Description>Text for value=1 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f6e000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Line 6" Id="6">
+                <Parameter Id="26" IdName="line6type">
+                    <Description>Type</Description>
+                    <Value Type="uint8" Default="06" Options="06=unused|00=byte (DPT 5.0xx)|01=integer value (DPT 8.0xx)|02=unsigned interger value (DPT 7.0xx)|03=float value (DPT 9.0xx)|04=text for bool value (DPT 1.0xx)|05=text (DPT 16.001)" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="27" IdName="line6text">
+                    <Description>Description (max 11 character)</Description>
+                    <Value Type="string11" Default="652e672e20524800000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="28" IdName="line6unit">
+                    <Description>Unit (max 3 character)</Description>
+                    <Value Type="string11" Default="652e672e20b04300000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="29" IdName="line6val0">
+                    <Description>Text for value=0 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f66660000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="30" IdName="line6val1">
+                    <Description>Text for value=1 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f6e000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Line 7" Id="7">
+                <Parameter Id="31" IdName="line7type">
+                    <Description>Type</Description>
+                    <Value Type="uint8" Default="06" Options="06=unused|00=byte (DPT 5.0xx)|01=integer value (DPT 8.0xx)|02=unsigned interger value (DPT 7.0xx)|03=float value (DPT 9.0xx)|04=text for bool value (DPT 1.0xx)|05=text (DPT 16.001)" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="32" IdName="line7text">
+                    <Description>Description (max 11 character)</Description>
+                    <Value Type="string11" Default="652e672e20524800000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="33" IdName="line7unit">
+                    <Description>Unit (max 3 character)</Description>
+                    <Value Type="string11" Default="652e672e20b04300000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="34" IdName="line7val0">
+                    <Description>Text for value=0 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f66660000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="35" IdName="line7val1">
+                    <Description>Text for value=1 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f6e000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Line 8" Id="8">
+                <Parameter Id="36" IdName="line8type">
+                    <Description>Type</Description>
+                    <Value Type="uint8" Default="06" Options="06=unused|00=byte (DPT 5.0xx)|01=integer value (DPT 8.0xx)|02=unsigned interger value (DPT 7.0xx)|03=float value (DPT 9.0xx)|04=text for bool value (DPT 1.0xx)|05=text (DPT 16.001)" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="37" IdName="line8text">
+                    <Description>Description (max 11 character)</Description>
+                    <Value Type="string11" Default="652e672e20524800000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="38" IdName="line8unit">
+                    <Description>Unit (max 3 character)</Description>
+                    <Value Type="string11" Default="652e672e20b04300000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="39" IdName="line8val0">
+                    <Description>Text for value=0 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f66660000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+                <Parameter Id="40" IdName="line8val1">
+                    <Description>Text for value=1 (max 9 character)</Description>
+                    <Value Type="string11" Default="6f6e000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+        </Parameters>
+        <CommObjects>
+            <CommObject Id="0" IdName="line1time">
+                <Name>Line 1</Name>
+                <Function>Time</Function>
+                <DataPointType>10.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="1" IdName="line1date">
+                <Name>Line 1</Name>
+                <Function>Date</Function>
+                <DataPointType>11.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="2" IdName="line1byte">
+                <Name>Line 1</Name>
+                <Function>byte [0..255]</Function>
+                <DataPointType>5.004</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="3" IdName="line1int">
+                <Name>Line 1</Name>
+                <Function>int [-32768..32767]</Function>
+                <DataPointType>8.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="4" IdName="line1uint">
+                <Name>Line 1</Name>
+                <Function>uint [0..65535]</Function>
+                <DataPointType>7.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="5" IdName="line1float">
+                <Name>Line 1</Name>
+                <Function>float [-999.99..999.99]</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="6" IdName="line1bool">
+                <Name>Line 1</Name>
+                <Function>bool [0..1]</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="7" IdName="line1text">
+                <Name>Line 1</Name>
+                <Function>text (14 character)</Function>
+                <DataPointType>16.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            
+            <CommObject Id="8" IdName="line2byte">
+                <Name>Line 2</Name>
+                <Function>byte [0..255]</Function>
+                <DataPointType>5.004</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="9" IdName="line2int">
+                <Name>Line 2</Name>
+                <Function>int [-32768..32767]</Function>
+                <DataPointType>8.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="10" IdName="line2uint">
+                <Name>Line 2</Name>
+                <Function>uint [0..65535]</Function>
+                <DataPointType>7.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="11" IdName="line2float">
+                <Name>Line 2</Name>
+                <Function>float [-999.99..999.99]</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="12" IdName="line2bool">
+                <Name>Line 2</Name>
+                <Function>bool [0..1]</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="13" IdName="line2text">
+                <Name>Line 2</Name>
+                <Function>text (14 character)</Function>
+                <DataPointType>16.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            
+            <CommObject Id="14" IdName="line3byte">
+                <Name>Line 3</Name>
+                <Function>byte [0..255]</Function>
+                <DataPointType>5.004</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="15" IdName="line3int">
+                <Name>Line 3</Name>
+                <Function>int [-32768..32767]</Function>
+                <DataPointType>8.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="16" IdName="line3uint">
+                <Name>Line 3</Name>
+                <Function>uint [0..65535]</Function>
+                <DataPointType>7.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="17" IdName="line3float">
+                <Name>Line 3</Name>
+                <Function>float [-999.99..999.99]</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="18" IdName="line3bool">
+                <Name>Line 3</Name>
+                <Function>bool [0..1]</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="19" IdName="line3text">
+                <Name>Line 3</Name>
+                <Function>text (14 character)</Function>
+                <DataPointType>16.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            
+            <CommObject Id="20" IdName="line4byte">
+                <Name>Line 4</Name>
+                <Function>byte [0..255]</Function>
+                <DataPointType>5.004</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="21" IdName="line4int">
+                <Name>Line 4</Name>
+                <Function>int [-32768..32767]</Function>
+                <DataPointType>8.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="22" IdName="line4uint">
+                <Name>Line 4</Name>
+                <Function>uint [0..65535]</Function>
+                <DataPointType>7.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="23" IdName="line4float">
+                <Name>Line 4</Name>
+                <Function>float [-999.99..999.99]</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="24" IdName="line4bool">
+                <Name>Line 4</Name>
+                <Function>bool [0..1]</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="25" IdName="line4text">
+                <Name>Line 4</Name>
+                <Function>text (14 character)</Function>
+                <DataPointType>16.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            
+            <CommObject Id="26" IdName="line5byte">
+                <Name>Line 5</Name>
+                <Function>byte [0..255]</Function>
+                <DataPointType>5.004</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="27" IdName="line5int">
+                <Name>Line 5</Name>
+                <Function>int [-32768..32767]</Function>
+                <DataPointType>8.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="28" IdName="line5uint">
+                <Name>Line 5</Name>
+                <Function>uint [0..65535]</Function>
+                <DataPointType>7.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="29" IdName="line5float">
+                <Name>Line 5</Name>
+                <Function>float [-999.99..999.99]</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="30" IdName="line5bool">
+                <Name>Line 5</Name>
+                <Function>bool [0..1]</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="31" IdName="line5text">
+                <Name>Line 5</Name>
+                <Function>text (14 character)</Function>
+                <DataPointType>16.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            
+            <CommObject Id="32" IdName="line6byte">
+                <Name>Line 6</Name>
+                <Function>byte [0..255]</Function>
+                <DataPointType>5.004</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="33" IdName="line6int">
+                <Name>Line 6</Name>
+                <Function>int [-32768..32767]</Function>
+                <DataPointType>8.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="34" IdName="line6uint">
+                <Name>Line 6</Name>
+                <Function>uint [0..65535]</Function>
+                <DataPointType>7.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="35" IdName="line6float">
+                <Name>Line 6</Name>
+                <Function>float [-999.99..999.99]</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="36" IdName="line6bool">
+                <Name>Line 6</Name>
+                <Function>bool [0..1]</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="37" IdName="line6text">
+                <Name>Line 6</Name>
+                <Function>text (14 character)</Function>
+                <DataPointType>16.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            
+            <CommObject Id="38" IdName="line7byte">
+                <Name>Line 7</Name>
+                <Function>byte [0..255]</Function>
+                <DataPointType>5.004</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="39" IdName="line7int">
+                <Name>Line 7</Name>
+                <Function>int [-32768..32767]</Function>
+                <DataPointType>8.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="40" IdName="line7uint">
+                <Name>Line 7</Name>
+                <Function>uint [0..65535]</Function>
+                <DataPointType>7.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="41" IdName="line7float">
+                <Name>Line 7</Name>
+                <Function>float [-999.99..999.99]</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="42" IdName="line7bool">
+                <Name>Line 7</Name>
+                <Function>bool [0..1]</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="43" IdName="line7text">
+                <Name>Line 7</Name>
+                <Function>text (14 character)</Function>
+                <DataPointType>16.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            
+            <CommObject Id="44" IdName="line8byte">
+                <Name>Line 8</Name>
+                <Function>byte [0..255]</Function>
+                <DataPointType>5.004</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="45" IdName="line8int">
+                <Name>Line 8</Name>
+                <Function>int [-32768..32767]</Function>
+                <DataPointType>8.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="46" IdName="line8uint">
+                <Name>Line 8</Name>
+                <Function>uint [0..65535]</Function>
+                <DataPointType>7.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="47" IdName="line8float">
+                <Name>Line 8</Name>
+                <Function>float [-999.99..999.99]</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="48" IdName="line8bool">
+                <Name>Line 8</Name>
+                <Function>bool [0..1]</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+            <CommObject Id="49" IdName="line8text">
+                <Name>Line 8</Name>
+                <Function>text (14 character)</Function>
+                <DataPointType>16.001</DataPointType>
+                <Flags>43</Flags>
+            </CommObject>
+        </CommObjects>
+        <Dependencies>
+            <ParameterDependency ParamId="2" Test="le" TestParamId="1" TestValue="04"/>
+            <ParameterDependency ParamId="3" Test="le" TestParamId="1" TestValue="03"/>
+            <ParameterDependency ParamId="4" Test="eq" TestParamId="1" TestValue="04"/>
+            <ParameterDependency ParamId="5" Test="eq" TestParamId="1" TestValue="04"/>
+            <ParameterDependency ParamId="7" Test="le" TestParamId="6" TestValue="04"/>
+            <ParameterDependency ParamId="8" Test="le" TestParamId="6" TestValue="03"/>
+            <ParameterDependency ParamId="9" Test="eq" TestParamId="6" TestValue="04"/>
+            <ParameterDependency ParamId="10" Test="eq" TestParamId="6" TestValue="04"/>
+            <ParameterDependency ParamId="12" Test="le" TestParamId="11" TestValue="04"/>
+            <ParameterDependency ParamId="13" Test="le" TestParamId="11" TestValue="03"/>
+            <ParameterDependency ParamId="14" Test="eq" TestParamId="11" TestValue="04"/>
+            <ParameterDependency ParamId="15" Test="eq" TestParamId="11" TestValue="04"/>
+            <ParameterDependency ParamId="17" Test="le" TestParamId="16" TestValue="04"/>
+            <ParameterDependency ParamId="18" Test="le" TestParamId="16" TestValue="03"/>
+            <ParameterDependency ParamId="19" Test="eq" TestParamId="16" TestValue="04"/>
+            <ParameterDependency ParamId="20" Test="eq" TestParamId="16" TestValue="04"/>
+            <ParameterDependency ParamId="22" Test="le" TestParamId="21" TestValue="04"/>
+            <ParameterDependency ParamId="23" Test="le" TestParamId="21" TestValue="03"/>
+            <ParameterDependency ParamId="24" Test="eq" TestParamId="21" TestValue="04"/>
+            <ParameterDependency ParamId="25" Test="eq" TestParamId="21" TestValue="04"/>
+            <ParameterDependency ParamId="27" Test="le" TestParamId="26" TestValue="04"/>
+            <ParameterDependency ParamId="28" Test="le" TestParamId="26" TestValue="03"/>
+            <ParameterDependency ParamId="29" Test="eq" TestParamId="26" TestValue="04"/>
+            <ParameterDependency ParamId="30" Test="eq" TestParamId="26" TestValue="04"/>
+            <ParameterDependency ParamId="32" Test="le" TestParamId="31" TestValue="04"/>
+            <ParameterDependency ParamId="33" Test="le" TestParamId="31" TestValue="03"/>
+            <ParameterDependency ParamId="34" Test="eq" TestParamId="31" TestValue="04"/>
+            <ParameterDependency ParamId="35" Test="eq" TestParamId="31" TestValue="04"/>
+            <ParameterDependency ParamId="37" Test="le" TestParamId="36" TestValue="04"/>
+            <ParameterDependency ParamId="38" Test="le" TestParamId="36" TestValue="03"/>
+            <ParameterDependency ParamId="39" Test="eq" TestParamId="36" TestValue="04"/>
+            <ParameterDependency ParamId="40" Test="eq" TestParamId="36" TestValue="04"/>
+            
+            <CommObjectDependency CommObjId="0" Test="eq" TestParamId="1" TestValue="07"/> <!--Time-->
+            <CommObjectDependency CommObjId="1" Test="eq" TestParamId="1" TestValue="07"/> <!--Date-->
+            
+            <CommObjectDependency CommObjId="2" Test="eq" TestParamId="1" TestValue="00"/> <!--5.004-->
+            <CommObjectDependency CommObjId="3" Test="eq" TestParamId="1" TestValue="01"/> <!--8.001-->
+            <CommObjectDependency CommObjId="4" Test="eq" TestParamId="1" TestValue="02"/> <!--7.001-->
+            <CommObjectDependency CommObjId="5" Test="eq" TestParamId="1" TestValue="03"/> <!--9.001-->
+            <CommObjectDependency CommObjId="6" Test="eq" TestParamId="1" TestValue="04"/> <!--1.001-->
+            <CommObjectDependency CommObjId="7" Test="eq" TestParamId="1" TestValue="05"/> <!--16.001-->
+            
+            <CommObjectDependency CommObjId="8" Test="eq" TestParamId="6" TestValue="00"/> <!--5.004-->
+            <CommObjectDependency CommObjId="9" Test="eq" TestParamId="6" TestValue="01"/> <!--8.001-->
+            <CommObjectDependency CommObjId="10" Test="eq" TestParamId="6" TestValue="02"/> <!--7.001-->
+            <CommObjectDependency CommObjId="11" Test="eq" TestParamId="6" TestValue="03"/> <!--9.001-->
+            <CommObjectDependency CommObjId="12" Test="eq" TestParamId="6" TestValue="04"/> <!--1.001-->
+            <CommObjectDependency CommObjId="13" Test="eq" TestParamId="6" TestValue="05"/> <!--16.001-->
+            
+            <CommObjectDependency CommObjId="14" Test="eq" TestParamId="11" TestValue="00"/> <!--5.004-->
+            <CommObjectDependency CommObjId="15" Test="eq" TestParamId="11" TestValue="01"/> <!--8.001-->
+            <CommObjectDependency CommObjId="16" Test="eq" TestParamId="11" TestValue="02"/> <!--7.001-->
+            <CommObjectDependency CommObjId="17" Test="eq" TestParamId="11" TestValue="03"/> <!--9.001-->
+            <CommObjectDependency CommObjId="18" Test="eq" TestParamId="11" TestValue="04"/> <!--1.001-->
+            <CommObjectDependency CommObjId="19" Test="eq" TestParamId="11" TestValue="05"/> <!--16.001-->
+            
+            <CommObjectDependency CommObjId="20" Test="eq" TestParamId="16" TestValue="00"/> <!--5.004-->
+            <CommObjectDependency CommObjId="21" Test="eq" TestParamId="16" TestValue="01"/> <!--8.001-->
+            <CommObjectDependency CommObjId="22" Test="eq" TestParamId="16" TestValue="02"/> <!--7.001-->
+            <CommObjectDependency CommObjId="23" Test="eq" TestParamId="16" TestValue="03"/> <!--9.001-->
+            <CommObjectDependency CommObjId="24" Test="eq" TestParamId="16" TestValue="04"/> <!--1.001-->
+            <CommObjectDependency CommObjId="25" Test="eq" TestParamId="16" TestValue="05"/> <!--16.001-->
+            
+            <CommObjectDependency CommObjId="26" Test="eq" TestParamId="21" TestValue="00"/> <!--5.004-->
+            <CommObjectDependency CommObjId="27" Test="eq" TestParamId="21" TestValue="01"/> <!--8.001-->
+            <CommObjectDependency CommObjId="28" Test="eq" TestParamId="21" TestValue="02"/> <!--7.001-->
+            <CommObjectDependency CommObjId="29" Test="eq" TestParamId="21" TestValue="03"/> <!--9.001-->
+            <CommObjectDependency CommObjId="30" Test="eq" TestParamId="21" TestValue="04"/> <!--1.001-->
+            <CommObjectDependency CommObjId="31" Test="eq" TestParamId="21" TestValue="05"/> <!--16.001-->
+            
+            <CommObjectDependency CommObjId="32" Test="eq" TestParamId="26" TestValue="00"/> <!--5.004-->
+            <CommObjectDependency CommObjId="33" Test="eq" TestParamId="26" TestValue="01"/> <!--8.001-->
+            <CommObjectDependency CommObjId="34" Test="eq" TestParamId="26" TestValue="02"/> <!--7.001-->
+            <CommObjectDependency CommObjId="35" Test="eq" TestParamId="26" TestValue="03"/> <!--9.001-->
+            <CommObjectDependency CommObjId="36" Test="eq" TestParamId="26" TestValue="04"/> <!--1.001-->
+            <CommObjectDependency CommObjId="37" Test="eq" TestParamId="26" TestValue="05"/> <!--16.001-->
+            
+            <CommObjectDependency CommObjId="38" Test="eq" TestParamId="31" TestValue="00"/> <!--5.004-->
+            <CommObjectDependency CommObjId="39" Test="eq" TestParamId="31" TestValue="01"/> <!--8.001-->
+            <CommObjectDependency CommObjId="40" Test="eq" TestParamId="31" TestValue="02"/> <!--7.001-->
+            <CommObjectDependency CommObjId="41" Test="eq" TestParamId="31" TestValue="03"/> <!--9.001-->
+            <CommObjectDependency CommObjId="42" Test="eq" TestParamId="31" TestValue="04"/> <!--1.001-->
+            <CommObjectDependency CommObjId="43" Test="eq" TestParamId="31" TestValue="05"/> <!--16.001-->
+            
+            <CommObjectDependency CommObjId="44" Test="eq" TestParamId="36" TestValue="00"/> <!--5.004-->
+            <CommObjectDependency CommObjId="45" Test="eq" TestParamId="36" TestValue="01"/> <!--8.001-->
+            <CommObjectDependency CommObjId="46" Test="eq" TestParamId="36" TestValue="02"/> <!--7.001-->
+            <CommObjectDependency CommObjId="47" Test="eq" TestParamId="36" TestValue="03"/> <!--9.001-->
+            <CommObjectDependency CommObjId="48" Test="eq" TestParamId="36" TestValue="04"/> <!--1.001-->
+            <CommObjectDependency CommObjId="49" Test="eq" TestParamId="36" TestValue="05"/> <!--16.001-->
+        </Dependencies>
+    </Device>
+</KonnektingDevice>
